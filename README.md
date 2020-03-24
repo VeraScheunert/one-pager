@@ -23,3 +23,10 @@ which can look like this:
   - create links to your css file
   - choose a license from choosealicense.com and insert to LICENSE file
   
+  7. Commit all changes and merge to the master branch
+
+  8. open a new branch and name it \(html)
+
+  9. Give your html a convenient structure
+
+  10. Commit all of these changes, jump to the master branch and merge the html branch
