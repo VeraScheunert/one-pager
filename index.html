@@ -13,12 +13,29 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header>
       <nav>
         <div class="navigation-logo"><i class="fas fa-adjust"></i></div>
         <div class="navigation-menu-desktop">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#elements">Elements</a></li>
+            <li><a href="#showcase">Showcase</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navigation-menu-mobile-collapsed">
+          <button class="navigation-button" id="expand-mobile-navigation">
+            <i class="fa fa-angle-left"></i>
+          </button>
+        </div>
+        <div class="navigation-menu-mobile">
+          <button class="navigation-button" id="collapse-mobile-navigation">
+            <i class="fa fa-angle-right"></i>
+          </button>
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#elements">Elements</a></li>
@@ -71,7 +88,7 @@
             <div class="card-grid">
               <div class="card">
                 <div class="card-icon">
-                  <i class="fa fa-adjust"></i>
+                  <i class="fas fa-book-reader"></i>
                 </div>
                 <h4>Sections</h4>
                 <p>
@@ -81,7 +98,7 @@
               </div>
               <div class="card">
                 <div class="card-icon">
-                  <i class="fa fa-adjust"></i>
+                  <i class="far fa-paper-plane"></i>
                 </div>
                 <h4>Sections</h4>
                 <p>
@@ -91,7 +108,7 @@
               </div>
               <div class="card">
                 <div class="card-icon">
-                  <i class="fa fa-adjust"></i>
+                  <i class="fas fa-burn"></i>
                 </div>
                 <h4>Sections</h4>
                 <p>

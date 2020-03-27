@@ -266,10 +266,45 @@ nav a:hover {
   text-decoration: none;
 }
 
+.navigation-menu-mobile-collapsed {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+.navigation-menu-mobile {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  padding: 1rem 2rem;
+  background-color: var(--bg-color-secondary);
+  text-align: right;
+  transform: translateX(100%);
+  transition: all 0.5s;
+  visibility: hidden;
+}
+
+.mobile-navigation-expanded .navigation-menu-mobile {
+  visibility: visible;
+  transform: translateX(0);
+}
+
 @media (max-width: 600px) {
   .navigation-menu-desktop {
     display: none;
   }
+  .navigation-menu-mobile-collapsed {
+    display: initial;
+  }
+}
+
+.navigation-button {
+  color: var(--theme-color-primary);
+  margin: 1rem 0;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 html {
