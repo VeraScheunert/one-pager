@@ -1,11 +1,22 @@
 :root {
-  --theme-color-primary: #5b88b4;
+  --theme-color-primary: #6d6d6d;
   --text-color-primary: rgb(8, 8, 8);
   --text-color-medium: rgb(131, 130, 129);
   --text-color-light: rgb(250, 248, 248);
   --bg-color-light: rgb(252, 245, 245);
   --bg-color-secondary: rgb(242, 245, 246);
   --bg-color-dark: rgb(58, 56, 56);
+}
+
+/* Darkmode */
+.dark {
+  --theme-color-primary: #c7d2cd;
+  --text-color-primary: #fffafa;
+  --text-color-medium: #e6e6e6;
+  --text-color-light: #373a3a;
+  --bg-color-light: rgb(58, 56, 56);
+  --bg-color-secondary: #6d6d6d;
+  --bg-color-dark: #9b9d97;
 }
 
 * {
@@ -21,6 +32,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   line-height: 1.4;
+  background-color: var(--bg-color-light);
 }
 
 h1,
@@ -69,6 +81,7 @@ h4 {
 
 p {
   margin-bottom: 1em;
+  text-align: justify;
 }
 
 li {
@@ -164,6 +177,7 @@ footer a:hover {
 
 .card p {
   font-size: 1rem;
+  text-align: center;
 }
 
 .card-icon {
@@ -240,6 +254,11 @@ footer a:hover {
   color: var(--theme-color-primary);
 }
 
+.dark-button {
+  font-size: 2rem;
+  color: var(--theme-color-primary);
+}
+
 nav {
   max-width: 70rem;
   margin: 0 auto;
@@ -254,7 +273,7 @@ nav {
 }
 
 .navigation-menu-desktop li:not(:first-child) {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 
 nav a {
