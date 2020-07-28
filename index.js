@@ -16,6 +16,8 @@ collapseButton.addEventListener("click", collapseMobileNavigation);
 
 var bodyElement = document.querySelector("body");
 var toggleDarkMode = function() {
+  var element = document.getElementById("footer");
+  element.classList.add("dark")
   bodyElement.classList.toggle("dark");
 };
 
